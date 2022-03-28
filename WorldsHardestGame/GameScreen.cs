@@ -148,7 +148,7 @@ namespace WorldsHardestGame
             {
                 gameTimer.Stop();
                 Form1.ChangeScreen(this, new WinScreen());
-                //burh
+                //burh//
             }
 
             Refresh();
