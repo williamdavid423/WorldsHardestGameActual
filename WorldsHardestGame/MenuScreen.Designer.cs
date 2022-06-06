@@ -30,12 +30,15 @@
         {
             this.playButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.howToPlayButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // playButton
             // 
-            this.playButton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.playButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.playButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.playButton.Location = new System.Drawing.Point(281, 211);
             this.playButton.Name = "playButton";
             this.playButton.Size = new System.Drawing.Size(203, 71);
@@ -46,9 +49,10 @@
             // 
             // exitButton
             // 
-            this.exitButton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.exitButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(281, 358);
+            this.exitButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exitButton.Location = new System.Drawing.Point(281, 400);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(203, 71);
             this.exitButton.TabIndex = 1;
@@ -56,11 +60,37 @@
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(189, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(382, 65);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Worlds Hardest Game";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // howToPlayButton
+            // 
+            this.howToPlayButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.howToPlayButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.howToPlayButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.howToPlayButton.Location = new System.Drawing.Point(281, 303);
+            this.howToPlayButton.Name = "howToPlayButton";
+            this.howToPlayButton.Size = new System.Drawing.Size(203, 71);
+            this.howToPlayButton.TabIndex = 3;
+            this.howToPlayButton.Text = "How To Play";
+            this.howToPlayButton.UseVisualStyleBackColor = false;
+            // 
             // MenuScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Controls.Add(this.howToPlayButton);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.playButton);
             this.Name = "MenuScreen";
@@ -73,5 +103,7 @@
 
         private System.Windows.Forms.Button playButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button howToPlayButton;
     }
 }
