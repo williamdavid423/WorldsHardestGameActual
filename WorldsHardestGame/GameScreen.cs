@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using System.Diagnostics;
 
 namespace WorldsHardestGame
 {
@@ -25,8 +27,8 @@ namespace WorldsHardestGame
         int ball2Y = 340;
         int ball3Y = 390;
         int ball4Y = 240;
-        int ball5Y = 190; 
-
+        int ball5Y = 190;
+        Stopwatch sw = Stopwatch.StartNew();
 
 
         public GameScreen()
@@ -87,6 +89,8 @@ namespace WorldsHardestGame
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {
+          
+
             Rectangle playerRec = new Rectangle(player.x, player.y, player.width, player.height);
 
             Rectangle Topwall = new Rectangle(0, 0, 800, 120);
@@ -99,6 +103,7 @@ namespace WorldsHardestGame
 
             Rectangle ballRec = new Rectangle(ballX, ballY, ballSize, ballSize);
 
+            timeLabel.Text = sw.Elapsed.ToString();
 
             if (leftArrowDown == true)
             {
@@ -138,6 +143,7 @@ namespace WorldsHardestGame
             {
                 gameTimer.Stop();
                 Form1.ChangeScreen(this, new GameoverScreen());
+                sw.Stop();
             }
 
             if (playerRec.IntersectsWith(Topwall))
