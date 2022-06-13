@@ -33,6 +33,7 @@
             this.initialTextbox = new System.Windows.Forms.TextBox();
             this.namesLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.addButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // HighScoreLabel
@@ -61,10 +62,11 @@
             // 
             // initialTextbox
             // 
-            this.initialTextbox.Location = new System.Drawing.Point(423, 154);
+            this.initialTextbox.Location = new System.Drawing.Point(375, 156);
             this.initialTextbox.Name = "initialTextbox";
             this.initialTextbox.Size = new System.Drawing.Size(137, 20);
             this.initialTextbox.TabIndex = 3;
+            this.initialTextbox.TextChanged += new System.EventHandler(this.initialTextbox_TextChanged);
             // 
             // namesLabel
             // 
@@ -76,6 +78,7 @@
             this.namesLabel.TabIndex = 4;
             this.namesLabel.Text = "Names";
             this.namesLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.namesLabel.Click += new System.EventHandler(this.namesLabel_Click);
             // 
             // label2
             // 
@@ -87,12 +90,27 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Time";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // addButton
+            // 
+            this.addButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.addButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addButton.Location = new System.Drawing.Point(558, 154);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(80, 29);
+            this.addButton.TabIndex = 6;
+            this.addButton.Text = "Add";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // HighscoreScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.namesLabel);
             this.Controls.Add(this.initialTextbox);
@@ -112,5 +130,6 @@
         private System.Windows.Forms.TextBox initialTextbox;
         private System.Windows.Forms.Label namesLabel;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button addButton;
     }
 }
