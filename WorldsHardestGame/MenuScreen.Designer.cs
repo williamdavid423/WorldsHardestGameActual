@@ -62,12 +62,13 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(189, 71);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DeepPink;
+            this.label1.Image = global::WorldsHardestGame.Properties.Resources.luffy_face;
+            this.label1.Location = new System.Drawing.Point(192, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(382, 65);
+            this.label1.Size = new System.Drawing.Size(382, 100);
             this.label1.TabIndex = 2;
             this.label1.Text = "Worlds Hardest Game";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,11 +89,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.BackgroundImage = global::WorldsHardestGame.Properties.Resources.pimpin_one_piece;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.howToPlayButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.playButton);
+            this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.PeachPuff;
             this.Name = "MenuScreen";
             this.Size = new System.Drawing.Size(800, 600);
             this.ResumeLayout(false);

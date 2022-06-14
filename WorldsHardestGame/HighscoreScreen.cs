@@ -13,9 +13,16 @@ namespace WorldsHardestGame
 {
     public partial class HighscoreScreen : UserControl
     {
+        List<string> highscoreList = new List<string>();
+
         public HighscoreScreen()
         {
             InitializeComponent();
+        }
+
+    public void HighscoreBuilder()
+        {
+            XmlReader reader = XmlReader.Create("HighscoreXml.xml");
         }
 
         private void initialTextbox_TextChanged(object sender, EventArgs e)
@@ -36,6 +43,11 @@ namespace WorldsHardestGame
         private void addButton_Click(object sender, EventArgs e)
         {
             XmlWriter writer = XmlWriter.Create("HighscoreXml.xml");
+        }
+
+        private void HighscoreScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -63,6 +63,26 @@ namespace WorldsHardestGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap luffy_face {
+            get {
+                object obj = ResourceManager.GetObject("luffy face", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pimpin_one_piece {
+            get {
+                object obj = ResourceManager.GetObject("pimpin one piece", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap poggers {
             get {
                 object obj = ResourceManager.GetObject("poggers", resourceCulture);

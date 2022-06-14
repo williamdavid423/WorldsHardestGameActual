@@ -118,6 +118,7 @@
             this.Controls.Add(this.HighScoreLabel);
             this.Name = "HighscoreScreen";
             this.Size = new System.Drawing.Size(800, 600);
+            this.Load += new System.EventHandler(this.HighscoreScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
