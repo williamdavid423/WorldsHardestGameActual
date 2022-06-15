@@ -13,7 +13,7 @@ namespace WorldsHardestGame
 {
     public partial class HighscoreScreen : UserControl
     {
-        List<string> highscoreList = new List<string>();
+        List<Highscore> highscoreList = new List<Highscore>();
 
         public HighscoreScreen()
         {
@@ -22,7 +22,35 @@ namespace WorldsHardestGame
 
     public void HighscoreBuilder()
         {
+            string name, time;
+
             XmlReader reader = XmlReader.Create("HighscoreXml.xml");
+
+            while (reader.Read())
+
+            {
+
+                if (reader.NodeType == XmlNodeType.Text)
+
+                {
+
+                    name = reader.ReadString();
+
+
+
+                    reader.ReadToNextSibling("time");
+
+                    time = reader.ReadString();
+
+
+                    Highscore hs = new Highscore(name, time);
+
+                    highscoreList.Add(hs);
+
+                }
+
+            }
+
         }
 
         private void initialTextbox_TextChanged(object sender, EventArgs e)
