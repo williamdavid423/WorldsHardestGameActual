@@ -61,6 +61,45 @@ namespace WorldsHardestGame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;level&gt;
+        ///	&lt;player&gt;
+        ///		&lt;name&gt;dkgje&lt;/name&gt;
+        ///		&lt;time&gt;325&lt;/time&gt;
+        ///	&lt;/player&gt;
+        ///	&lt;player&gt;
+        ///		&lt;name&gt;wqwfw&lt;/name&gt;
+        ///		&lt;time&gt;632&lt;/time&gt;
+        ///	&lt;/player&gt;
+        ///	&lt;player&gt;
+        ///		&lt;name&gt;asfasdf&lt;/name&gt;
+        ///		&lt;time&gt;123&lt;/time&gt;
+        ///	&lt;/player&gt;
+        ///	&lt;player&gt;
+        ///		&lt;name&gt;wfewa&lt;/name&gt;
+        ///		&lt;time&gt;456&lt;/time&gt;
+        ///	&lt;/player&gt;
+        ///	&lt;player&gt;
+        ///		&lt;name&gt;ewafw&lt;/name&gt;
+        ///		&lt;time&gt;789&lt;/time&gt;
+        ///	&lt;/player&gt;
+        ///	&lt;player&gt;
+        ///		&lt;name&gt;ewafwe&lt;/name&gt;
+        ///		&lt;time&gt;101&lt;/time&gt;
+        ///	&lt;/player&gt;
+        ///	&lt;player&gt;
+        ///		&lt;name&gt;q234w&lt;/name&gt;
+        ///		&lt;time&gt;122&lt;/time&gt;
+        ///	&lt;/player&gt;
+        ///	&lt;pla [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string HighscoreXml {
+            get {
+                return ResourceManager.GetString("HighscoreXml", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap luffy_face {

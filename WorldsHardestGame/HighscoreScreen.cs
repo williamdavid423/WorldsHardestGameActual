@@ -18,13 +18,14 @@ namespace WorldsHardestGame
         public HighscoreScreen()
         {
             InitializeComponent();
+            HighscoreBuilder();
         }
 
     public void HighscoreBuilder()
         {
             string name, time;
 
-            XmlReader reader = XmlReader.Create("HighscoreXml.xml");
+            XmlReader reader = XmlReader.Create("Resources/HighscoreXml.xml");
 
             while (reader.Read())
 
@@ -33,7 +34,7 @@ namespace WorldsHardestGame
                 if (reader.NodeType == XmlNodeType.Text)
 
                 {
-
+                   // reader.ReadToFollowing("name");
                     name = reader.ReadString();
 
 
@@ -49,8 +50,13 @@ namespace WorldsHardestGame
 
                 }
 
-            }
 
+
+            }
+            foreach (Highscore h in highscoreList)
+            {
+                namesLabel.Text += $"\n{h.name}     {h.time}";
+            }
         }
 
         private void initialTextbox_TextChanged(object sender, EventArgs e)
@@ -71,6 +77,7 @@ namespace WorldsHardestGame
         private void addButton_Click(object sender, EventArgs e)
         {
             XmlWriter writer = XmlWriter.Create("HighscoreXml.xml");
+
         }
 
         private void HighscoreScreen_Load(object sender, EventArgs e)

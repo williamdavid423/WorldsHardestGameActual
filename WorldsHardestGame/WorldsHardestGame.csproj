@@ -139,5 +139,10 @@
   <ItemGroup>
     <None Include="Resources\luffy face.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HighscoreXml.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

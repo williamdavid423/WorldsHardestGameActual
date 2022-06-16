@@ -153,7 +153,7 @@ namespace WorldsHardestGame
             if (playerRec.IntersectsWith(winningRec))
             {
                 gameTimer.Stop();
-                Form1.ChangeScreen(this, new WinScreen());
+                Form1.ChangeScreen(this, new HighscoreScreen());
                 //burh//
             }
 
