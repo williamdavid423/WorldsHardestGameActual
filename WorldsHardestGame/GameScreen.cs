@@ -162,21 +162,21 @@ namespace WorldsHardestGame
 
         private void GameScreen_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.FillRectangle(Brushes.DodgerBlue, player.x, player.y, player.width, player.height);
+            e.Graphics.FillRectangle(Brushes.DeepPink, player.x, player.y, player.width, player.height);
            
-            e.Graphics.FillRectangle(Brushes.MediumPurple, 0, 0, 800, 120);
-            e.Graphics.FillRectangle(Brushes.MediumPurple, 0, 480, 800, 120);
-            e.Graphics.FillRectangle(Brushes.MediumPurple, 0, 120, 100, 360);
-            e.Graphics.FillRectangle(Brushes.MediumPurple, 700, 120, 100, 360);
-            e.Graphics.FillRectangle(Brushes.MediumPurple, 200, 180, 20, 300);
-            e.Graphics.FillRectangle(Brushes.MediumPurple, 580, 120, 20, 300);
+            e.Graphics.FillRectangle(Brushes.Black, 0, 0, 800, 120);
+            e.Graphics.FillRectangle(Brushes.Black, 0, 480, 800, 120);
+            e.Graphics.FillRectangle(Brushes.Black, 0, 120, 100, 360);
+            e.Graphics.FillRectangle(Brushes.Black, 700, 120, 100, 360);
+            e.Graphics.FillRectangle(Brushes.Black, 200, 180, 20, 300);
+            e.Graphics.FillRectangle(Brushes.Black, 580, 120, 20, 300);
 
             e.Graphics.FillEllipse(Brushes.Red, ballX, ballY, ballSize, ballSize);
             e.Graphics.FillEllipse(Brushes.Red, ballX, ball2Y, ballSize, ballSize);
             e.Graphics.FillEllipse(Brushes.Red, ballX, ball3Y, ballSize, ballSize);
             e.Graphics.FillEllipse(Brushes.Red, ballX, ball4Y, ballSize, ballSize);
             e.Graphics.FillEllipse(Brushes.Red, ballX, ball5Y, ballSize, ballSize);
-            e.Graphics.FillRectangle(Brushes.Green, 640, 190, 20, 20);
+            e.Graphics.FillRectangle(Brushes.BlueViolet, 640, 190, 20, 20);
         }
 
         private void GameScreen_Load(object sender, EventArgs e)
